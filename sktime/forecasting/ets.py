@@ -504,3 +504,7 @@ class AutoETS(_StatsModelsAdapter):
         ]
 
         return params
+
+    def get_fitted_params(self):
+        # returns the paramter name: paramter val in a dictionary form
+        return self._fitted_forecaster._get_fitted_params()
